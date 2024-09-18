@@ -1,7 +1,3 @@
-const data = {
-    name: 'Shuvro',
-    age: 24,
-}
 
 const navLink = [
     { name: 'Home', path: 'home' },
@@ -11,5 +7,29 @@ const navLink = [
 ];
 
 
+const services = [
+    {
+        title: 'Web Developer',
+        icon: 'icon',
+        index: 1
+    },
+    {
+        title: 'Web Developer',
+        icon: 'icon',
+        index: 2
+    },
+    {
+        title: 'Web Developer',
+        icon: 'icon',
+        index: 3
+    },
+    {
+        title: 'Web Developer',
+        icon: 'icon',
+        index: 4
+    },
+]
 
-export { data, navLink };
+
+
+export { navLink, services };

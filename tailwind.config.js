@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        'grow-shrink': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.5)' },
+        },
+      },
+      animation: {
+        'grow-shrink1': 'grow-shrink 5s ease-in-out infinite',
+        'grow-shrink2': 'grow-shrink 4s ease-in-out infinite',
+        'grow-shrink3': 'grow-shrink 7s ease-in-out infinite',
+      },
+    },
   },
   plugins: [],
 }
