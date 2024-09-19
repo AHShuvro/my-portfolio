@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <>
 
-            <div className="relative w-full min-h-screen sm:h-screen mx-auto flex flex-col sm:flex-row overflow-hidden">
+            <div className="relative w-full sm:min-h-screen h-screen justify-center mx-auto flex flex-col sm:flex-row overflow-hidden ">
                 <AnimationCanvas />
                 <div className="w-full sm:w-1/2 sm:h-screen flex items-center justify-center text-center">
                     <div>

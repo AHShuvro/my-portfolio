@@ -4,7 +4,7 @@ import { textVariant2 } from "./animations";
 
 const AnimationCanvas = () => {
     return (
-        <section className="relative overflow-hidden text-white w-full sm:w-1/2 min-h-screen sm:h-screen flex items-center">
+        <div className="relative overflow-hidden text-white w-full sm:w-1/2 sm:min-h-screen sm:h-screen flex items-center">
             <motion.div
                 variants={textVariant2()} initial="hidden" animate="show"
                 className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center"
@@ -16,7 +16,7 @@ const AnimationCanvas = () => {
                 </p>
                 <a href="#contact">
                     <motion.button
-                        className="bg-indigo-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700 transition"
+                        className=" text-white py-3 px-6 rounded-lg shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 transition"
                         initial={{ scale: 1 }}
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: 'spring', stiffness: 300 }}
@@ -25,7 +25,7 @@ const AnimationCanvas = () => {
                     </motion.button>
                 </a>
             </motion.div>
-        </section>
+        </div>
     );
 };
 

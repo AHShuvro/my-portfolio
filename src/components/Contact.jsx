@@ -32,8 +32,8 @@ const Contact = () => {
     };
 
     return (
-        <div className="flex items-center justify-around min-h-screen bg-gray-100 p-6">
-            <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row items-center justify-around gap-10 xl:gap-0 min-h-screen bg-gray-100 p-6">
+            <div className="w-1/2 hidden lg:flex">
                 <iframe className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116833.8318789773!2d90.33728815181978!3d23.780975728157546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1708593211586!5m2!1sbn!2sbd" width="800" height="600" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="w-full max-w-xl py-24 bg-[#1F2937] shadow-lg rounded-lg p-8">
