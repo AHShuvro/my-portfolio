@@ -8,12 +8,12 @@ const About = () => {
     return (
         <div className="mt-12 sm:px-16 px-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-lg text-[#333333] uppercase tracking-wider">Introduction</p>
-                <h2 className="text-5xl font-extrabold text-[#333333] mt-2">Overview</h2>
+                <p className="text-base sm:text-lg text-[#333333] uppercase tracking-wide sm:tracking-wider">Introduction</p>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#333333] mt-2">Overview</h2>
             </motion.div>
 
             <motion.p
-                className="mt-6 text-[#333333] text-lg max-w-3xl leading-relaxed tracking-wide"
+                className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-[#333333] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"

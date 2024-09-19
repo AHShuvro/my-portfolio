@@ -1,7 +1,7 @@
 export const textVariant = (delay) => {
     return {
         hidden: {
-            y: -50,
+            y: -70,
             opacity: 0,
         },
         show: {
@@ -10,6 +10,24 @@ export const textVariant = (delay) => {
             transition: {
                 type: "spring",
                 duration: 1.25,
+                delay: delay,
+            },
+        },
+    };
+};
+
+export const textVariant2 = (delay) => {
+    return {
+        hidden: {
+            x: -100,
+            opacity: 0,
+        },
+        show: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                type: "spring",
+                duration: 3,
                 delay: delay,
             },
         },
@@ -85,4 +103,16 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
             },
         },
     };
+};
+
+export const slideStyle = (currentSlider, inx) => {
+    return {
+        transform: `${currentSlider - 1 === inx
+                ? "rotateY(4deg)"
+                : currentSlider + 1 === inx
+                    ? "rotateY(-4deg)"
+                    : ""
+            }`,
+        transformStyle: "preserve-3d",
+    }
 };

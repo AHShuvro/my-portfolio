@@ -10,9 +10,9 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-sky-400'
+                className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-[#1F2937]'
             >
-                <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+                <div className='w-full flex justify-between items-center mx-auto'>
                     <Link to="/"
                         className='flex items-center gap-2'
                         onClick={() => {
@@ -20,8 +20,8 @@ const Navbar = () => {
                             setActive("");
                         }}
                     >
-                        <h3 className='w-8 h-9 object-contain   flex items-center'>logo</h3>
-                        <p className='text-[#333333] text-lg font-bold cursor-pointer' >DevShuvro
+                        <h3 className='w-8 h-9 object-contain text-[#FFFF00] flex items-center'>logo</h3>
+                        <p className='text-[#FFFFFF] text-lg font-bold cursor-pointer' >DevShuvro
                         </p>
                     </Link>
                     <ul className='list-none hidden sm:flex flex-row gap-10'>
