@@ -19,7 +19,7 @@ export const Feedback = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlider();
-        }, 2000);
+        }, 2500);
         return () => clearInterval(interval);
     }, [currentSlider]);
 

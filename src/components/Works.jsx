@@ -40,7 +40,7 @@ const Works = () => {
                         delay: 2000,
                         disableOnInteraction: false,
                     }}
-                    speed={2000}
+                    speed={1500}
                     pagination={{ clickable: true }}
                     modules={[Autoplay, Pagination]}
                     className="mySwiper"
