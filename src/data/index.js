@@ -46,6 +46,7 @@ const projects = [
         projectName: 'ASHUI',
         client: 'Demo',
         budget: '$00.00',
+        git: 'https://github.com/AHShuvro/ahsui.git',
         duration: '20',
         date: '12 dec 2023',
         id: '1'
@@ -61,9 +62,40 @@ const projects = [
         projectName: 'Clothing',
         client: 'Demo',
         budget: '$00.00',
+        git: 'https://github.com/AHShuvro/clothing-clone-site.git',
         duration: '20',
         date: '12 dec 2023',
         id: '2'
+
+    },
+    {        
+        img: 'https://i.ibb.co.com/N9h5rpk/Screenshot-2024-09-19-183504.jpg',
+        link: 'https://terminal-0-1.vercel.app/',
+        title: 'Know Me by Command: Developer Portfolio',
+        type: 'Web development',
+        description: `Unlock the world of development with every command. This portfolio presents a clean, command-line interface showcasing projects, skills, and expertise. Navigate through my journey as a developer, where each command reveals a new layer of innovation and craftsmanship. Explore the simplicity and power of code, one command at a time.`,
+        projectName: 'Clothing',
+        client: 'Demo',
+        budget: '$00.00',
+        git: 'https://github.com/AHShuvro/Terminal-0.1.git',
+        duration: '20',
+        date: '12 dec 2023',
+        id: '3'
+
+    },
+    {
+        img: 'https://i.ibb.co.com/r7RrDq8/Screenshot-2024-09-19-183123.jpg',
+        link: 'https://code-pane.vercel.app/',
+        title: `Let's codding with online code-pane!`,
+        type: 'Web development',
+        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.`,
+        projectName: 'ASHUI',
+        client: 'Demo',
+        budget: '$00.00',
+        git: 'https://github.com/AHShuvro/Code-Pane.git',
+        duration: '20',
+        date: '12 dec 2023',
+        id: '4'
 
     },
     {
@@ -75,34 +107,7 @@ const projects = [
         projectName: 'Brand-Shop',
         client: 'Demo',
         budget: '$00.00',
-        duration: '20',
-        date: '12 dec 2023',
-        id: '3'
-
-    },
-    {
-        img: 'https://i.ibb.co/vc63rC7/ashui-1.jpg',
-        link: 'https://ahsui.vercel.app',
-        title: 'Discover Versatility in ASHUi Component Library Today!',
-        type: 'Web development',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.`,
-        projectName: 'ASHUI',
-        client: 'Demo',
-        budget: '$00.00',
-        duration: '20',
-        date: '12 dec 2023',
-        id: '4'
-
-    },
-    {
-        img: 'https://i.ibb.co/GtfLD4G/clothing.jpg',
-        link: 'https://clothing-clone-site.vercel.app/',
-        title: 'amar sunar bangla',
-        type: 'Web development',
-        description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown print took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.`,
-        projectName: 'Clothing',
-        client: 'Demo',
-        budget: '$00.00',
+        git: 'https://github.com/AHShuvro/brand-shop.git',
         duration: '20',
         date: '12 dec 2023',
         id: '5'
@@ -117,6 +122,7 @@ const projects = [
         projectName: 'Admin Dashboard',
         client: 'Demo',
         budget: '$00.00',
+        git: 'https://github.com/AHShuvro/Dashboard-1.git',
         duration: '20',
         date: '28 dec 2024',
         id: '6'

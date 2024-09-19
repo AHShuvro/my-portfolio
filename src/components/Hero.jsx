@@ -1,22 +1,25 @@
 import AnimationCanvas from './AnimationCanvas';
-
-
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
     return (
         <>
 
-            <div className="relative w-full sm:min-h-screen h-screen justify-center mx-auto flex flex-col sm:flex-row overflow-hidden ">
+            <div className="relative w-full sm:min-h-screen h-screen justify-center mx-auto flex flex-col sm:flex-row overflow-hidden bg-gradient-to-r from-[#1F2937] via-[#374151] to-[#111827]">
                 <AnimationCanvas />
                 <div className="w-full sm:w-1/2 sm:h-screen flex items-center justify-center text-center">
                     <div>
-                        <h1 className="text-4xl sm:text-6xl font-bold text-white">Hi, I'm Abul Hasan</h1>
                         <p className="mt-4 text-gray-300 text-lg sm:text-xl">Frontend Developer | React Specialist</p>
-                        <button className="mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg">
-                            Explore My Work
-                        </button>
+                        <a href="https://terminal-0-1.vercel.app/" target='blank'>
+                            <motion.button
+                                className=" mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg"
+                                initial={{ scale: 1 }}
+                                whileHover={{ scale: 1.05 }}
+                                transition={{ type: 'spring', stiffness: 300 }}
+                            >
+                                Explore My Work
+                            </motion.button>
+                        </a>
                     </div>
                 </div>
             </div>

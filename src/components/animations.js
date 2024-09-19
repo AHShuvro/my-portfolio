@@ -108,11 +108,12 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 export const slideStyle = (currentSlider, inx) => {
     return {
         transform: `${currentSlider - 1 === inx
-                ? "rotateY(4deg)"
-                : currentSlider + 1 === inx
-                    ? "rotateY(-4deg)"
-                    : ""
+            ? "rotateY(4deg)"
+            : currentSlider + 1 === inx
+                ? "rotateY(-4deg)"
+                : ""
             }`,
         transformStyle: "preserve-3d",
     }
 };
+

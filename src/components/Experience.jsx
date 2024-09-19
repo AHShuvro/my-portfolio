@@ -7,7 +7,6 @@ const Experience = () => {
 
             <div className=" mt-12 sm:px-16 px-6 relative w-full min-h-screen sm:h-screen mx-auto flex flex-col items-center sm:flex-row overflow-hidden bg-gradient-to-r from-gray-800 via-gray-600 to-gray-400 text-white">
                 <div className="absolute inset-0 w-full h-full flex items-center justify-center z-0">
-                    {/* Background animation or image can go here */}
                     <div className="bg-white opacity-10 w-[500px] h-[500px] rounded-full"></div>
                 </div>
 

@@ -3,9 +3,9 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Experience from "./components/Experience"
-import Tech from "./components/Tech"
-import Works from "./components/Works"
 import Feedback from "./components/Feedback"
+import Works from "./components/Works"
+import { Gallery } from "./components/Gallery"
 import Contact from "./components/Contact"
 
 
@@ -21,8 +21,8 @@ function App() {
           </div>
           <About />
           <Experience />
-          <Tech />
           <Works />
+          <Gallery />
           <Feedback />
           <div className="relative z-0">
             <Contact />

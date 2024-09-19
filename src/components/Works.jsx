@@ -12,6 +12,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import { fadeIn, textVariant } from "./animations";
 import { projects } from "../data";
 
+
 const Works = () => {
 
 
@@ -75,13 +76,37 @@ const Works = () => {
                                             animate="show"
                                         >
                                             <div className=" relative w-full h-full flex items-center justify-center mb-4">
-                                                <img
-                                                    src={project.img}
-                                                    alt={project.title}
-                                                    className="w-full h-[190px] object-cover rounded-md"
-                                                />
+                                                <a href={project.link} target="blank">
+                                                    <img
+                                                        src={project.img}
+                                                        alt={project.title}
+                                                        className="w-full h-[190px] object-cover rounded-md"
+                                                    />
+                                                </a>
                                                 <div className="absolute w-7 h-7 right-4 top-5 bg-[#000000] rounded-full cursor-pointer flex items-center justify-center">
-                                                    <IoLogoGithub className=" text-white text-xl" />
+
+                                                    <style>
+                                                        {`
+                                                          @keyframes zoomInOut {
+                                                            0% {
+                                                              transform: scale(1);
+                                                            }
+                                                            50% {
+                                                              transform: scale(1.5);
+                                                            }
+                                                            100% {
+                                                              transform: scale(1);
+                                                            }
+                                                          }
+                                                                                                        
+                                                          .animate-zoom {
+                                                            animation: zoomInOut 1s infinite;
+                                                          }
+                                                        `}
+                                                    </style>
+                                                    <a href={project.git} target="blank">
+                                                        <IoLogoGithub className=" text-white text-xl animate-zoom" />
+                                                    </a>
                                                 </div>
                                             </div>
 
@@ -101,7 +126,7 @@ const Works = () => {
                                                 <button
                                                     className="text-blue-500 font-bold"
                                                 >
-                                                    <p><br />Read more</p>
+                                                    <a href={project.link} target="blank"><br />Read more</a>
                                                 </button>
                                             )}
                                         </p>
