@@ -1,10 +1,13 @@
 
 const navLink = [
-    { name: 'Home', path: 'home' },
-    { name: 'About', path: 'About' },
-    { name: 'Services', path: 'services' },
-    { name: 'Works', path: 'Works' }
+    { name: 'Home', path: 'home' },   
+    { name: 'About', path: 'about' },
+    { name: 'Experience', path: 'experience' },
+    { name: 'Works', path: 'works' },
+    { name: 'Gallery', path: 'gallery' },
+    { name: 'Contact', path: 'contact' },
 ];
+
 
 
 const services = [
