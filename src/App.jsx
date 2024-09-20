@@ -30,11 +30,11 @@ function App() {
         <Element name="gallery" className="element">
           <Gallery />
         </Element>
-          <Feedback />
+        <Feedback />
+        <Contact />
         <Element name="contact" className="element">
-          <Contact />
+          <Footer />
         </Element>
-        <Footer />
       </div>
     </BrowserRouter>
   );

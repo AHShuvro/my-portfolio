@@ -28,20 +28,22 @@ export const Gallery = () => {
             currentSlider === sliderImages.length - 1 ? 0 : currentSlider + 1
         );
 
+
+
     return (
         <div className="mt-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-base sm:text-lg text-[#333333] uppercase tracking-wide sm:tracking-wider">My Work</p>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#333333] mt-2">Projects</h2>
+                <p className="text-sm sm:text-base text-[#333333] uppercase tracking-wide sm:tracking-wider">Overview</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#333333] mt-2">Gallery</h2>
             </motion.div>
 
             <motion.p
-                className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-[#333333] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#333333] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"
             >
-                I am a web developer passionate about building user-friendly, high-performance applications. I specialize in frontend development with React, creating visually appealing, interactive websites. My goal is to constantly improve and bring fresh ideas to the web development space.
+                The Gallery component is designed to display a collection of images, cards, or media in a grid layout. The component should be responsive, ensuring the layout adjusts smoothly across different screen sizes, from mobile to desktop. The gallery may include features such as image modals for a full-screen view, hover effects for additional information or zoom, and filtering options for better navigation.
             </motion.p>
             <div className=" h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
                 <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">

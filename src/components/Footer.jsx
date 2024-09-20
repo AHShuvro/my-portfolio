@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaLinkedin, FaGithub, FaFacebook, FaEnvelope, FaFilePdf } from 'react-icons/fa';
 
 const Footer = () => {
@@ -11,30 +10,30 @@ const Footer = () => {
                 </div>
 
                 <div className='mb-8 flex space-x-4'>
-                    <a href='https://linkedin.com' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                    <a href='https://www.linkedin.com/in/ahshuvro77777/' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
                         <FaLinkedin size={24} />
                     </a>
-                    <a href='https://github.com' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                    <a href='https://github.com/ahshuvro' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
                         <FaGithub size={24} />
                     </a>
                     <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
                         <FaFacebook size={24} />
                     </a>
-                    <a href='mailto:email@example.com' className='hover:text-gray-400 transition-colors'>
+                    <a href='ahshuvro77777@gmail.com' className='hover:text-gray-400 transition-colors'>
                         <FaEnvelope size={24} />
                     </a>
-                    <a href='/path-to-your-resume.pdf' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                    <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
                         <FaFilePdf size={24} />
                     </a>
                 </div>
 
                 <div className='text-center mb-8'>
                     <p className='text-lg mb-2'>Contact me:</p>
-                    <p className='text-gray-400'>email@example.com</p>
+                    <p className='text-gray-400'>ahshuvro77777@gmail.com</p>
                 </div>
 
                 <div className='text-center text-gray-400'>
-                    <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} A H Shuvro. All rights reserved.</p>
                 </div>
             </div>
         </footer>

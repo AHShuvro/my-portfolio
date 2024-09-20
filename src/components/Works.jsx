@@ -20,12 +20,12 @@ const Works = () => {
     return (
         <div className="mt-12 sm:px-16 px-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-base sm:text-lg text-[#333333] uppercase tracking-wide sm:tracking-wider">My Work</p>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#333333] mt-2">Projects</h2>
+                <p className="text-sm sm:text-base text-[#333333] uppercase tracking-wide sm:tracking-wider">My Work</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#333333] mt-2">Projects</h2>
             </motion.div>
 
             <motion.p
-                className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-[#333333] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#333333] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"
@@ -76,7 +76,7 @@ const Works = () => {
                                             animate="show"
                                         >
                                             <div className=" relative w-full h-full flex items-center justify-center mb-4">
-                                                <a href={project.link} target="blank">
+                                                <a href={project.link} target="_blank">
                                                     <img
                                                         src={project.img}
                                                         alt={project.title}
@@ -104,7 +104,7 @@ const Works = () => {
                                                           }
                                                         `}
                                                     </style>
-                                                    <a href={project.git} target="blank">
+                                                    <a href={project.git} target="_blank">
                                                         <IoLogoGithub className=" text-white text-xl animate-zoom" />
                                                     </a>
                                                 </div>
@@ -137,7 +137,7 @@ const Works = () => {
                     ))}
                 </Swiper>
             </div>
-        </div>
+        </div >
     );
 };
 

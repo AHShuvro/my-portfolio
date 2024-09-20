@@ -16,7 +16,7 @@ const AnimationCanvas = () => {
                     A passionate web developer specializing in creating interactive and visually stunning web applications.
                 </p>
                 <div className='flex gap-4 '>
-                    <a href='https://github.com/AHShuvro' target='blank'>
+                    <a href='https://github.com/AHShuvro' target='_blank'>
                         <motion.button
                             className=" mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg"
                             initial={{ scale: 1 }}
@@ -26,14 +26,14 @@ const AnimationCanvas = () => {
                             GitHub
                         </motion.button>
                     </a>
-                    <a href='https://www.linkedin.com/in/ahshuvro77777/' target='blank'>
+                    <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank'>
                         <motion.button
                             className=" mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg"
                             initial={{ scale: 1 }}
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: 'spring', stiffness: 300 }}
                         >
-                            Linkedin
+                            Resume
                         </motion.button>
                     </a>
                 </div>
