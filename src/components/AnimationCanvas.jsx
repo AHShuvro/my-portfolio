@@ -10,7 +10,7 @@ const AnimationCanvas = () => {
                 className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center"
             >
                 <h1 className="text-4xl sm:text-6xl font-bold text-white"
-                >Hi, I'm <span className="text-indigo-400">Shuvro</span></h1>
+                >Hi, I'm <span className="text-[#6C56EF]">Shuvro</span></h1>
                 <p className="mt-4 text-gray-300 text-lg sm:text-xl" >
                     A passionate web developer specializing in creating interactive and visually stunning web applications.
                 </p>

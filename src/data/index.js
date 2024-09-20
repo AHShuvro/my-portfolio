@@ -130,6 +130,30 @@ const projects = [
     },
 ]
 
+const feedbackData = [
+    {
+        feedback: "Exceptional service! They turned my outdated website into a sleek masterpiece. Highly recommend for anyone seeking top-notch web development.",
+        name: "Alexander Flik",
+        company: "BlueTech Solutions"
+    },
+    {
+        feedback: "Incredible attention to detail! Their team transformed my vision into a stunning reality. Couldn't be happier with the results!",
+        name: "Thomas",
+        company: "PixelPerfect WebWorks"
+    },
+    {
+        feedback: "Outstanding professionalism! From start to finish, they exceeded my expectations. The website they created surpassed all others in design and functionality. Amazing job!",
+        name: "Emily",
+        company: "CodeCraft Studios"
+    },
+    {
+        feedback: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tempore? Nam consequuntur natus rerum minus. Ratione, id!",
+        name: "Lorem, ipsum.",
+        company: "Lorem."
+    }
+];
 
 
-export { navLink, services, projects };
+
+
+export { navLink, services, projects, feedbackData };

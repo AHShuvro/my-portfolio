@@ -7,6 +7,7 @@ import Feedback from "./components/Feedback"
 import Works from "./components/Works"
 import { Gallery } from "./components/Gallery"
 import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Feedback />
           <div className="relative z-0">
             <Contact />
+            <Footer />
           </div>
         </div>
       </BrowserRouter>

@@ -20,7 +20,6 @@ const Navbar = () => {
                             setActive("");
                         }}
                     >
-                        <h3 className='w-8 h-9 object-contain text-[#FFFF00] flex items-center'>logo</h3>
                         <p className='text-[#FFFFFF] text-lg font-bold cursor-pointer' >DevShuvro
                         </p>
                     </Link>

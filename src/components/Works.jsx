@@ -67,7 +67,7 @@ const Works = () => {
                         <SwiperSlide key={idx}>
                             <div className="xs:w-64 w-full">
 
-                                <div className="bg-gray-800 rounded-2xl p-6 min-h-[380px] sm:min-h-[510px] flex flex-col items-center justify-center">
+                                <div className="bg-[#1F2937] rounded-2xl p-6 min-h-[380px] sm:min-h-[510px] flex flex-col items-center justify-center">
                                     <Tilt>
                                         <motion.div
                                             className="w-full green-pink-gradient p-[1px] rounded-2xl shadow-lg"
@@ -115,12 +115,12 @@ const Works = () => {
                                     <div className="flex flex-col items-start justify-center">
                                         <h3 className="text-lg text-start font-bold text-white">
                                             {project.title.length > 30
-                                                ? `${project.title.substring(0, 30)} ...`
+                                                ? `${project.title.slice(0, 30)} ...`
                                                 : project.title}
                                         </h3>
                                         <p className="text-sm text-gray-300">
                                             {project.description.length > 220
-                                                ? `${project.description.substring(0, 220)} ...`
+                                                ? `${project.description.slice(0, 220)} ...`
                                                 : project.description}
                                             {project.description.length > 220 && (
                                                 <button
