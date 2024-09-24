@@ -25,7 +25,7 @@ const About = () => {
                     <div key={idx} className="xs:w-64 w-full">
                         <Tilt>
                             <motion.div
-                                className="w-full green-pink-gradient p-[1px] rounded-2xl shadow-lg"
+                                className="w-full green-pink-gradient p-[1px] rounded-2xl"
                                 variants={fadeIn("right", "spring", 0.5 * idx, 0.75)}
                                 initial="hidden"
                                 animate="show"

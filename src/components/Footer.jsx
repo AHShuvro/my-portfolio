@@ -54,11 +54,11 @@ const Footer = () => {
                                 {...register("email")}
                                 type="text"
                                 placeholder="Email"
-                                className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.email ? 'border-red-500' : 'border-gray-300'
+                                className={`w-full p-3 border text-[#777777] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.email ? 'border-red-500' : 'border-gray-300'
                                     }`}
                             />
                             {errors.email && (
-                                <span className="text-red-500 text-sm mt-1">{errors.email.message}</span>
+                                <span className="text-red-500 text-sm sm:text-base font-semibold mt-1">{errors.email.message}</span>
                             )}
                         </div>
 
@@ -67,11 +67,11 @@ const Footer = () => {
                                 {...register("password")}
                                 type="password"
                                 placeholder="Password"
-                                className={`w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.password ? 'border-red-500' : 'border-gray-300'
+                                className={`w-full p-3 border text-[#777777] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.password ? 'border-red-500' : 'border-gray-300'
                                     }`}
                             />
                             {errors.password && (
-                                <span className="text-red-500 text-sm mt-1">{errors.password.message}</span>
+                                <span className="text-red-500 text-sm sm:text-base font-semibold mt-1">{errors.password.message}</span>
                             )}
                         </div>
                         <button
