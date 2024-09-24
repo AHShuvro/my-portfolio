@@ -17,7 +17,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: 'spring', stiffness: 300 }}
                             >
-                                Explore My Work
+                                Explore Interesting
                             </motion.button>
                         </a>
                     </div>

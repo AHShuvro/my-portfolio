@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import { navLink } from '../data';
 
 import { HiBars3BottomRight } from "react-icons/hi2";
@@ -13,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-[#1F2937]'>
             <div className='w-full flex justify-between items-center mx-auto'>
-                <Link to="home"
+                <RouterLink to={'/'}
                     className='flex items-center gap-2'
                     smooth={true}
                     onClick={() => {
@@ -22,12 +23,12 @@ const Navbar = () => {
                     }}
                 >
                     <p className='text-[#FFFFFF] text-lg font-bold cursor-pointer'>DevShuvro</p>
-                </Link>
+                </RouterLink>
                 <ul className='list-none hidden sm:flex flex-row gap-4 md:gap-10'>
                     {
                         navLink.map((link, idx) => (
                             <li key={idx}>
-                                <Link to={link.path}
+                                <ScrollLink to={link.path}
                                     className={`${active === link.name ? "text-red-500" : "text-[#FFFFFF]"} text-lg font-medium cursor-pointer`}
                                     smooth={true}
                                     offset={-90}
@@ -35,7 +36,7 @@ const Navbar = () => {
                                     onSetActive={setActive}
                                 >
                                     {link.name}
-                                </Link>
+                                </ScrollLink>
                             </li>
                         ))
                     }
@@ -54,7 +55,7 @@ const Navbar = () => {
                             {
                                 navLink.map((link, idx) => (
                                     <li key={idx}>
-                                        <Link to={link.path}
+                                        <ScrollLink to={link.path}
                                             className={`${active === link.name ? "text-red-500" : "text-[#FFFFFF]"} text-base font-medium cursor-pointer`}
                                             smooth={true}
                                             offset={-90}
@@ -63,7 +64,7 @@ const Navbar = () => {
                                             onClick={() => setToggle(!toggle)}
                                         >
                                             {link.name}
-                                        </Link>
+                                        </ScrollLink>
                                     </li>
                                 ))
                             }

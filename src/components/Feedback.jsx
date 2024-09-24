@@ -10,13 +10,13 @@ import { feedbackData } from '../data';
 
 const Feedback = () => {
     return (
-        <div className="h-auto sm:h-screen mt-12 sm:mx-16 mx-6">
+        <div className="h-auto my-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-[#333333] uppercase tracking-wide sm:tracking-wider">Client Feedback</p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#333333] mt-2">What Clients Say</h2>
+                <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">Client Feedback</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">What Clients Say</h2>
             </motion.div>
             <motion.p
-                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#333333] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#ffffff] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"
@@ -71,7 +71,7 @@ const Feedback = () => {
                                         <button
                                             className="text-blue-500 font-bold"
                                         >
-                                            <a className='text-base font-bold' href="" target="blank">Read more</a>
+                                            <a className='text-base font-bold' href="#" target="">Read more</a>
                                         </button>
                                     )}
                                 </p>

@@ -2,10 +2,19 @@
 const navLink = [
     { name: 'Home', path: 'home' },   
     { name: 'About', path: 'about' },
+    { name: 'Skills', path: 'skills' },
     { name: 'Experience', path: 'experience' },
     { name: 'Works', path: 'works' },
-    { name: 'Gallery', path: 'gallery' },
-    { name: 'Contact', path: 'contact' },
+];
+
+const skills = [
+    { name: "HTML", level: "Expert", icon: "🌐" },
+    { name: "CSS", level: "Expert", icon: "🎨" },
+    { name: "JavaScript", level: "Advanced", icon: "📜" },
+    { name: "React", level: "Advanced", icon: "⚛️" },
+    { name: "Next.js", level: "Advanced", icon: "🚀" },
+    { name: "Tailwind CSS", level: "Intermediate", icon: "💡" },
+    { name: "Node.js", level: "Intermediate", icon: "🔧" },
 ];
 
 
@@ -22,18 +31,13 @@ const services = [
         index: 2
     },
     {
-        title: 'BackEnd developer',
-        icon: 'https://i.ibb.co.com/svvNq1Q/database-storage.png',
+        title: 'JavaScript Developer',
+        icon: "https://i.ibb.co.com/VN7QJXn/javascript.png",
         index: 3
     },
     {
         title: 'Content Creator',
         icon: "https://i.ibb.co.com/gz8zsbm/content-creator.png",
-        index: 4
-    },
-    {
-        title: 'JavaScript Developer',
-        icon: "https://i.ibb.co.com/VN7QJXn/javascript.png",
         index: 4
     },
 ]
@@ -159,4 +163,4 @@ const feedbackData = [
 
 
 
-export { navLink, services, projects, feedbackData };
+export { navLink, services, projects, feedbackData, skills};
