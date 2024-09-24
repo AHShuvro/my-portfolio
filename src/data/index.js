@@ -13,8 +13,12 @@ const skills = [
     { name: "JavaScript", level: "Advanced", icon: "📜" },
     { name: "React", level: "Advanced", icon: "⚛️" },
     { name: "Tailwind CSS", level: "Intermediate", icon: "💡" },
-    { name: "Bootstrap", level: "Intermediate", icon: "📚" },
+    { name: "Bootstrap", level: "Intermediate", icon: "🅱️" },
+    { name: "Node.js", level: "Advanced", icon: "🔧" },
+    { name: "Next.js", level: "Advanced", icon: "🌐" },
+    { name: "MongoDB", level: "Intermediate", icon: "🍃" }
 ];
+
 
 
 
@@ -40,6 +44,11 @@ const services = [
         icon: "https://i.ibb.co.com/gz8zsbm/content-creator.png",
         index: 4
     },
+    {
+        title: 'Backend Development',
+        icon: "https://i.ibb.co.com/svvNq1Q/database-storage.png",
+        index: 5
+    },
 ]
 
 
@@ -56,7 +65,13 @@ const projects = [
         git: 'https://github.com/AHShuvro/ahsui.git',
         duration: '20',
         date: '12 dec 2023',
-        id: '1'
+        id: 1,
+        gallery: [
+            'path/to/image4.jpg',
+            'path/to/image5.jpg',
+            'path/to/image6.jpg',
+        ],
+        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
 
 
     },
@@ -72,7 +87,13 @@ const projects = [
         git: 'https://github.com/AHShuvro/clothing-clone-site.git',
         duration: '20',
         date: '12 dec 2023',
-        id: '2'
+        id: 2,
+        gallery: [
+            'path/to/image4.jpg',
+            'path/to/image5.jpg',
+            'path/to/image6.jpg',
+        ],
+        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
 
     },
     {        
@@ -87,7 +108,13 @@ const projects = [
         git: 'https://github.com/AHShuvro/Terminal-0.1.git',
         duration: '20',
         date: '12 dec 2023',
-        id: '3'
+        id: 3,
+        gallery: [
+            'path/to/image4.jpg',
+            'path/to/image5.jpg',
+            'path/to/image6.jpg',
+        ],
+        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
 
     },
     {
@@ -102,7 +129,13 @@ const projects = [
         git: 'https://github.com/AHShuvro/Code-Pane.git',
         duration: '20',
         date: '12 dec 2023',
-        id: '4'
+        id: 4,
+        gallery: [
+            'path/to/image4.jpg',
+            'path/to/image5.jpg',
+            'path/to/image6.jpg',
+        ],
+        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
 
     },
     {
@@ -117,7 +150,13 @@ const projects = [
         git: 'https://github.com/AHShuvro/brand-shop.git',
         duration: '20',
         date: '12 dec 2023',
-        id: '5'
+        id: 5,
+        gallery: [
+            'path/to/image4.jpg',
+            'path/to/image5.jpg',
+            'path/to/image6.jpg',
+        ],
+        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
 
     },
     {
@@ -132,7 +171,13 @@ const projects = [
         git: 'https://github.com/AHShuvro/Dashboard-1.git',
         duration: '20',
         date: '28 dec 2024',
-        id: '6'
+        id: 6,
+        gallery: [
+            'path/to/image4.jpg',
+            'path/to/image5.jpg',
+            'path/to/image6.jpg',
+        ],
+        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
 
     },
 ]

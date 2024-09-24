@@ -12,6 +12,7 @@ import { Gallery } from "./components/Gallery";
 import Footer from "./components/Footer";
 import Loading from "./components/Loading";
 import Skills from "./components/Skills";
+import ProjectDetail from "./components/ProjectDetail";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,7 +58,7 @@ function App() {
               </>
             }
           />
-          <Route path="/works" element={<Works />} />
+          <Route path="/projectDetail/:id" element={<ProjectDetail />} />
         </Routes>
       </div>
     </Router>

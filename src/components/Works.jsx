@@ -11,6 +11,7 @@ import { IoLogoGithub } from "react-icons/io5";
 
 import { fadeIn, textVariant } from "./animations";
 import { projects } from "../data";
+import { Link } from "react-router-dom";
 
 
 const Works = () => {
@@ -126,7 +127,7 @@ const Works = () => {
                                                 <button
                                                     className="text-blue-500 font-bold"
                                                 >
-                                                    <a href={project.link} target="blank"><br />Read more</a>
+                                                    <Link to={`/projectDetail/${project.id}`} target="blank"><br />Read more</Link>
                                                 </button>
                                             )}
                                         </p>
