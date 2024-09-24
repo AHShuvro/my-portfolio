@@ -31,7 +31,7 @@ export const Gallery = () => {
 
 
     return (
-        <div className="my-12 sm:mx-16 mx-6">
+        <div className="py-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
                 <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">Overview</p>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">Gallery</h2>
@@ -45,11 +45,11 @@ export const Gallery = () => {
             >
                 The Gallery component is designed to display a collection of images, cards, or media in a grid layout. The component should be responsive, ensuring the layout adjusts smoothly across different screen sizes, from mobile to desktop. The gallery may include features such as image modals for a full-screen view, hover effects for additional information or zoom, and filtering options for better navigation.
             </motion.p>
-            <div className=" h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
+            <div className=" flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
                 <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
                 </div>
                 <div
-                    className="h-[540px] md:h-[670px] w-2/3 ml-auto relative ease-linear duration-700 flex items-center"
+                    className="h-[380px] sm:h-[440px] md:h-[670px] w-2/3 ml-auto relative ease-linear duration-700 flex items-center"
                     style={{ transform: `translateX(-${currentSlider * 50}%)` }}
                 >
                     {sliderImages.map((slide, inx) => (
