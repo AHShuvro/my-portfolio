@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { textVariant2 } from "./animations";
-import { Link } from 'react-scroll';
 
 
 const AnimationCanvas = () => {
@@ -26,7 +25,7 @@ const AnimationCanvas = () => {
                             GitHub
                         </motion.button>
                     </a>
-                    <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank'>
+                    <a href='https://drive.google.com/file/d/1hC1je4pT5jttkwSVgpJsN59fOsgmovKl/view?usp=sharing' target='_blank'>
                         <motion.button
                             className=" mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg"
                             initial={{ scale: 1 }}
