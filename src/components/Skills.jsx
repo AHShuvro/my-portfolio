@@ -27,7 +27,7 @@ const Skills = () => {
                             <span className="text-4xl mr-4">{skill.icon}</span>
                             <div>
                                 <h3 className="text-xl font-semibold text-white">{skill.name}</h3>
-                                <p className="text-sm text-gray-400">{skill.level}</p>
+                            <p className="text-sm text-[#FCE100]">{skill.level}</p>
                             </div>
                         </motion.div>
                     ))}
