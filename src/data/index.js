@@ -12,10 +12,10 @@ const skills = [
     { name: "CSS", level: "Expert", icon: "🎨" },
     { name: "JavaScript", level: "Advanced", icon: "📜" },
     { name: "React", level: "Advanced", icon: "⚛️" },
-    { name: "Next.js", level: "Advanced", icon: "🚀" },
     { name: "Tailwind CSS", level: "Intermediate", icon: "💡" },
-    { name: "Node.js", level: "Intermediate", icon: "🔧" },
+    { name: "Bootstrap", level: "Intermediate", icon: "📚" },
 ];
+
 
 
 
