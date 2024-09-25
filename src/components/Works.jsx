@@ -21,12 +21,12 @@ const Works = () => {
     return (
         <div className="py-12 sm:px-16 px-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">My Work</p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">Projects</h2>
+                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">My Work</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">Projects</h2>
             </motion.div>
 
             <motion.p
-                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#ffffff] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-primary-text max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"
@@ -72,7 +72,7 @@ const Works = () => {
                         <SwiperSlide key={idx}>
                             <div className="xs:w-64 w-full">
 
-                                <div className="bg-secondary rounded-2xl p-6 min-h-[380px] sm:min-h-[510px] flex flex-col items-center justify-center">
+                                <div className="bg-secondary rounded-2xl p-6 min-h-[380px] sm:min-h-[510px] flex flex-col items-center justify-center text-primary-text hover:text-white duration-600">
                                     <Tilt>
                                         <motion.div
                                             className="w-full green-pink-gradient p-[1px] rounded-2xl shadow-lg"
@@ -118,12 +118,12 @@ const Works = () => {
                                         </motion.div>
                                     </Tilt>
                                     <div className="flex flex-col items-start justify-center">
-                                        <h3 className="text-lg text-start font-bold text-white">
+                                        <h3 className="text-lg text-start font-bold ">
                                             {project.title.length > 30
                                                 ? `${project.title.slice(0, 30)} ...`
                                                 : project.title}
                                         </h3>
-                                        <p className="text-sm text-gray-300">
+                                        <p className="text-sm ">
                                             {project.description.length > 220
                                                 ? `${project.description.slice(0, 220)} ...`
                                                 : project.description}

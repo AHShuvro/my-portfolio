@@ -8,11 +8,11 @@ const Skills = () => {
     return (
         <section className="py-12 sm:px-16 px-6">
                 <motion.div variants={textVariant()} initial="hidden" animate="show">
-                    <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">Skills</p>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">My Skills</h2>
+                    <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Skills</p>
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">My Skills</h2>
                 </motion.div>
                 <motion.p
-                    className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-[#ffffff] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                    className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-primary-text max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                     variants={fadeIn('', '', 0.1, 1)}
                     initial="hidden"
                     animate="show"
@@ -28,14 +28,14 @@ const Skills = () => {
                     {skills.map((skill, idx) => (
                         <motion.div
                             key={idx}
-                            className="flex items-center p-6 rounded-custom-2 bg-gradient-to-r to-secondary from-primary shadow-lg"
+                            className="flex items-center p-6 rounded-custom-2 bg-gradient-to-r to-secondary from-primary shadow-lg text-primary-text hover:text-white duration-400"
                             variants={itemVariants}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
                             <span className="text-4xl mr-4">{skill.icon}</span>
                             <div>
-                                <h3 className="text-xl font-semibold text-white">{skill.name}</h3>
+                                <h3 className="text-xl font-semibold ">{skill.name}</h3>
                                 <p className="text-sm font-semibold text-secondary-text">{skill.level}</p>
                             </div>
                         </motion.div>

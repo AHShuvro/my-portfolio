@@ -8,11 +8,11 @@ const About = () => {
     return (
         <div className="py-12 sm:px-16 px-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">Introduction</p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">Overview</h2>
+                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Introduction</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">Overview</h2>
             </motion.div>
             <motion.p
-                className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-[#ffffff] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-primary-text max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"
@@ -30,13 +30,13 @@ const About = () => {
                                 initial="hidden"
                                 animate="show"
                             >
-                                <div className="bg-gradient-to-r from-secondary to-primary shadow-custom-1 rounded-2xl p-6 min-h-[280px] flex flex-col items-center justify-center">
+                                <div className="bg-gradient-to-r from-secondary to-primary shadow-custom-1 rounded-2xl p-6 min-h-[280px] flex flex-col items-center justify-center text-primary-text hover:text-white duration-400">
                                     <img
                                         src={service.icon}
                                         alt={service.title}
                                         className="w-16 h-16 object-contain mb-4"
                                     />
-                                    <h3 className="text-lg font-bold text-white">{service.title}</h3>
+                                    <h3 className="text-lg font-bold ">{service.title}</h3>
                                 </div>
                             </motion.div>
                         </Tilt>

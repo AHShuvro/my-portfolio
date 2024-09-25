@@ -12,7 +12,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 opacity-95 bg-[#212428]'>
+        <nav className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-[#212428] shadow-custom-3'>
             <div className='w-full flex justify-between items-center mx-auto'>
                 <RouterLink to={'/'}
                     className='flex items-center gap-2'
@@ -29,11 +29,11 @@ const Navbar = () => {
                         navLink.map((link, idx) => (
                             <li key={idx}>
                                 <ScrollLink to={link.path}
-                                    className={`${active === link.name ? "text-red-500" : "text-[#FFFFFF]"} text-lg font-medium cursor-pointer`}
+                                    className={`${active === link.name ? "text-secondary-text" : "text-[#FFFFFF]"} text-lg font-medium cursor-pointer`}
                                     smooth={true}
                                     offset={-90}
                                     duration={700}
-                                    onSetActive={setActive}
+                                    onClick={() => {setToggle(!toggle); setActive(link.name)}}
                                 >
                                     {link.name}
                                 </ScrollLink>
@@ -56,12 +56,11 @@ const Navbar = () => {
                                 navLink.map((link, idx) => (
                                     <li key={idx}>
                                         <ScrollLink to={link.path}
-                                            className={`${active === link.name ? "text-red-500" : "text-[#FFFFFF]"} text-base font-medium cursor-pointer`}
+                                            className={`${active === link.name ? "text-secondary-text" : "text-[#FFFFFF]"} text-base font-medium cursor-pointer`}
                                             smooth={true}
                                             offset={-90}
                                             duration={700}
-                                            onSetActive={setActive}
-                                            onClick={() => setToggle(!toggle)}
+                                            onClick={() => {setToggle(!toggle); setActive(link.name)}}
                                         >
                                             {link.name}
                                         </ScrollLink>

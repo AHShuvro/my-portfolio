@@ -33,12 +33,12 @@ export const Gallery = () => {
     return (
         <div className="py-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">Overview</p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">Gallery</h2>
+                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Overview</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">Gallery</h2>
             </motion.div>
 
             <motion.p
-                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#ffffff] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-primary-text max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"

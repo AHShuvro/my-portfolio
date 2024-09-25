@@ -35,7 +35,7 @@ const Footer = () => {
 
 
     return (
-        <footer className='w-full bg-secondary text-white py-12 sm:px-16 px-6 '>
+        <footer className='w-full bg-secondary text-primary-text py-12 sm:px-16 px-6 '>
             <div className=" flex flex-col lg:flex-row items-center justify-around gap-10 xl:gap-0 max-h-screen ">
                 <div className="w-full lg:w-1/2 hidden lg:flex">
                     <iframe
@@ -46,19 +46,19 @@ const Footer = () => {
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
-                <div className="w-full lg:w-1/2 bg-[#1F2937] shadow-lg rounded-lg p-8 max-w-lg mx-auto">
-                    <h2 className="text-2xl font-bold text-white text-center mb-6">Login</h2>
+                <div className="w-full lg:w-1/2 bg-primary shadow-custom-1 rounded-lg p-8 max-w-lg mx-auto">
+                    <h2 className="text-2xl font-bold text-primary-text text-center mb-6">Login</h2>
                     <form className="flex flex-col gap-6" onSubmit={handleSubmit(submitHandler)}>
                         <div>
                             <input
                                 {...register("email")}
                                 type="text"
                                 placeholder="Email"
-                                className={`w-full p-3 border text-[#777777] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.email ? 'border-red-500' : 'border-gray-300'
+                                className={`w-full p-3 border text-[#777777] rounded-lg outline-none ${errors.email ? 'border-secondary-text' : 'border-gray-300'
                                     }`}
                             />
                             {errors.email && (
-                                <span className="text-red-500 text-sm sm:text-base font-semibold mt-1">{errors.email.message}</span>
+                                <span className="text-secondary-text text-sm sm:text-base font-semibold mt-1">{errors.email.message}</span>
                             )}
                         </div>
 
@@ -67,11 +67,11 @@ const Footer = () => {
                                 {...register("password")}
                                 type="password"
                                 placeholder="Password"
-                                className={`w-full p-3 border text-[#777777] rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 ${errors.password ? 'border-red-500' : 'border-gray-300'
+                                className={`w-full p-3 border text-[#777777] rounded-lg outline-none  ${errors.password ? 'border-secondary-text' : 'border-gray-300'
                                     }`}
                             />
                             {errors.password && (
-                                <span className="text-red-500 text-sm sm:text-base font-semibold mt-1">{errors.password.message}</span>
+                                <span className="text-secondary-text text-sm sm:text-base font-semibold mt-1">{errors.password.message}</span>
                             )}
                         </div>
                         <button
@@ -101,10 +101,10 @@ const Footer = () => {
                     <a href='https://github.com/ahshuvro' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaGithub size={24} />
                     </a>
-                    <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
+                    <a href='https://www.facebook.com/ahshuvro7777/' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaFacebook size={24} />
                     </a>
-                    <a href='ahshuvro77777@gmail.com' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
+                    <a href='https://ahshuvro77777@gmail.com' target='-blank' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaEnvelope size={24} />
                     </a>
                     <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>

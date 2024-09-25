@@ -12,11 +12,11 @@ const Feedback = () => {
     return (
         <div className="h-auto my-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-[#ffffff] uppercase tracking-wide sm:tracking-wider">Client Feedback</p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#ffffff] mt-2">What Clients Say</h2>
+                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Client Feedback</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">What Clients Say</h2>
             </motion.div>
             <motion.p
-                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-[#ffffff] max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
+                className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg text-primary-text max-w-full sm:max-w-2xl lg:max-w-3xl leading-relaxed tracking-normal sm:tracking-wide"
                 variants={fadeIn('', '', 0.1, 1)}
                 initial="hidden"
                 animate="show"
@@ -64,7 +64,7 @@ const Feedback = () => {
                     {feedbackData.map((item, idx) => (
                         <SwiperSlide key={idx}>
                             <div className="w-full bg-secondary rounded-lg flex flex-col items-start justify-center px-4 sm:px-6 md:px-8 lg:px-14 py-8 md:py-12 lg:py-16">
-                                <p className='text-white text-base sm:text-lg md:text-xl lg:text-2xl pb-6'>
+                                <p className='text-primary-text text-base sm:text-lg md:text-xl lg:text-2xl pb-6'>
                                     {item.feedback.length > 120
                                         ? `${item.feedback.slice(0, 120)} ...`
                                         : item.feedback}
@@ -77,7 +77,7 @@ const Feedback = () => {
                                         </button>
                                     )}
                                 </p>
-                                <p className='text-white text-lg sm:text-xl md:text-2xl font-poppins pb-3'>{item.name}</p>
+                                <p className='text-primary-text text-lg sm:text-xl md:text-2xl font-poppins pb-3'>{item.name}</p>
                                 <p className='text-[#858792] text-sm sm:text-base md:text-lg font-poppins'>{item.company}</p>
                             </div>
                         </SwiperSlide>
