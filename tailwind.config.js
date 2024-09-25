@@ -25,8 +25,8 @@ export default {
 
       },
       boxShadow: {
-        'custom-1': '0 15px 10px -2px rgba(0, 0, 0, 0.2)',
-        'custom-2': '0 15px 10px -2px rgba(0, 0, 0, 0.1)',
+        'custom-1': '10px 10px 10px -10px rgba(0, 0, 0, 0.2)',
+        'custom-2': '10px 15px 10px -10px rgba(0, 0, 0, 0.1)',
         'custom-3': '0 5px 5px -2px #111111',
       }
     },

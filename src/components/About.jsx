@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className="py-12 sm:px-16 px-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Introduction</p>
+                <p className="text-sm sm:text-base text-secondary-text font-medium uppercase tracking-wide sm:tracking-wider">Introduction</p>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">Overview</h2>
             </motion.div>
             <motion.p
@@ -30,7 +30,7 @@ const About = () => {
                                 initial="hidden"
                                 animate="show"
                             >
-                                <div className="bg-gradient-to-r from-secondary to-primary shadow-custom-1 rounded-2xl p-6 min-h-[280px] flex flex-col items-center justify-center text-primary-text hover:text-white duration-400">
+                                <div className="bg-gradient-to-r from-secondary to-primary shadow-custom-1 rounded-sm p-6 min-h-[280px] flex flex-col items-center justify-center text-primary-text hover:text-white duration-400">
                                     <img
                                         src={service.icon}
                                         alt={service.title}

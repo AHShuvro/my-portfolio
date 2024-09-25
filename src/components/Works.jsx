@@ -21,7 +21,7 @@ const Works = () => {
     return (
         <div className="py-12 sm:px-16 px-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">My Work</p>
+                <p className="text-sm sm:text-base text-secondary-text font-medium uppercase tracking-wide sm:tracking-wider">My Work</p>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">Projects</h2>
             </motion.div>
 

@@ -33,7 +33,7 @@ export const Gallery = () => {
     return (
         <div className="py-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Overview</p>
+                <p className="text-sm sm:text-base text-secondary-text font-medium uppercase tracking-wide sm:tracking-wider">Overview</p>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">Gallery</h2>
             </motion.div>
 

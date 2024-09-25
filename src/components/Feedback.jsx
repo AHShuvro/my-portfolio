@@ -12,7 +12,7 @@ const Feedback = () => {
     return (
         <div className="h-auto my-12 sm:mx-16 mx-6">
             <motion.div variants={textVariant()} initial="hidden" animate="show">
-                <p className="text-sm sm:text-base text-primary-text uppercase tracking-wide sm:tracking-wider">Client Feedback</p>
+                <p className="text-sm sm:text-base text-secondary-text font-medium uppercase tracking-wide sm:tracking-wider">Client Feedback</p>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary-text mt-2">What Clients Say</h2>
             </motion.div>
             <motion.p
