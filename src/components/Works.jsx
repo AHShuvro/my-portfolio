@@ -43,7 +43,11 @@ const Works = () => {
                         disableOnInteraction: false,
                     }}
                     speed={1500}
-                    pagination={{ clickable: true }}
+                    pagination={{ clickable: true,
+                        renderBullet: (index, className) => {
+                            return `<span class="${className}" style="background-color: #ff0a38; border-radius: 50%; width: 6px; height: 6px; display: inline-block; margin: 0 5px;"></span>`;
+                        },
+                     }}
                     modules={[Autoplay, Pagination]}
                     className="mySwiper"
                     breakpoints={{
@@ -68,7 +72,7 @@ const Works = () => {
                         <SwiperSlide key={idx}>
                             <div className="xs:w-64 w-full">
 
-                                <div className="bg-[#1F2937] rounded-2xl p-6 min-h-[380px] sm:min-h-[510px] flex flex-col items-center justify-center">
+                                <div className="bg-secondary rounded-2xl p-6 min-h-[380px] sm:min-h-[510px] flex flex-col items-center justify-center">
                                     <Tilt>
                                         <motion.div
                                             className="w-full green-pink-gradient p-[1px] rounded-2xl shadow-lg"
@@ -84,7 +88,7 @@ const Works = () => {
                                                         className="w-full h-[190px] object-cover rounded-md"
                                                     />
                                                 </a>
-                                                <div className="absolute w-7 h-7 right-4 top-5 bg-[#000000] rounded-full cursor-pointer flex items-center justify-center">
+                                                <div className="absolute w-7 h-7 right-4 top-5 bg-secondary-text rounded-full cursor-pointer flex items-center justify-center">
 
                                                     <style>
                                                         {`
@@ -125,7 +129,7 @@ const Works = () => {
                                                 : project.description}
                                             {project.description.length > 220 && (
                                                 <button
-                                                    className="text-blue-500 font-bold"
+                                                    className="text-secondary-text font-bold"
                                                 >
                                                     <Link to={`/projectDetail/${project.id}`} target="blank"><br />Read more</Link>
                                                 </button>

@@ -29,7 +29,7 @@ function App() {
 
   return (
     <Router>
-      <div className="relative z-0 bg-gradient-to-r from-gray-900 via-gray-800 to-black">
+      <div className="relative z-0 bg-primary">
 
         <Routes>
           <Route

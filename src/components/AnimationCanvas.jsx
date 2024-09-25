@@ -1,41 +1,63 @@
 import { motion } from 'framer-motion';
 import { textVariant2 } from "./animations";
 
+import { FaLinkedin, FaGithubSquare, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
 const AnimationCanvas = () => {
     return (
-        <div className="relative overflow-hidden text-white w-full sm:w-1/2 sm:min-h-screen sm:h-screen flex items-center">
+        <div className="relative overflow-hidden w-full lg:w-1/2 text-white flex items-center">
             <motion.div
                 variants={textVariant2()} initial="hidden" animate="show"
-                className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center justify-center text-center"
+                className="relative z-10 flex flex-col gap-2 sm:gap-4 lg:gap-6 items-start justify-center text-center"
             >
+                <p className="uppercase">Welcome to my world</p>
                 <h1 className="text-4xl sm:text-6xl font-bold text-white"
-                >Hi, I'm <span className="text-[#6C56EF]">Shuvro</span></h1>
-                <p className="mt-4 text-gray-300 text-lg sm:text-xl" >
+                >Hi, I'm <span className="text-secondary-text">Shuvro</span></h1>
+                <p className="mt-4 text-start text-gray-300 text-lg sm:text-xl" >
                     A passionate web developer specializing in creating interactive and visually stunning web applications.
                 </p>
-                <div className='flex gap-4 '>
-                    <a href='https://github.com/AHShuvro' target='_blank'>
-                        <motion.button
-                            className=" mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg"
-                            initial={{ scale: 1 }}
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ type: 'spring', stiffness: 300 }}
-                        >
-                            GitHub
-                        </motion.button>
-                    </a>
-                    <a href='https://drive.google.com/file/d/1hC1je4pT5jttkwSVgpJsN59fOsgmovKl/view?usp=sharing' target='_blank'>
-                        <motion.button
-                            className=" mt-6 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg"
-                            initial={{ scale: 1 }}
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ type: 'spring', stiffness: 300 }}
-                        >
-                            Resume
-                        </motion.button>
-                    </a>
-                </div>
+                <div className='flex gap-6'>
+                            <a href="https://terminal-0-1.vercel.app/" target='_blank'>
+                                <motion.button
+                                    className=" mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1"
+                                    initial={{ scale: 1 }}
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: 'spring', stiffness: 300 }}
+                                >
+                                    <FaLinkedin />
+                                </motion.button>
+                            </a>
+                            <a href="https://terminal-0-1.vercel.app/" target='_blank'>
+                                <motion.button
+                                    className=" mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1"
+                                    initial={{ scale: 1 }}
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: 'spring', stiffness: 300 }}
+                                >
+                                    <FaGithubSquare />
+                                </motion.button>
+                            </a>
+                            <a href="https://terminal-0-1.vercel.app/" target='_blank'>
+                                <motion.button
+                                    className=" mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1"
+                                    initial={{ scale: 1 }}
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: 'spring', stiffness: 300 }}
+                                >
+                                    <FaFacebook />
+                                </motion.button>
+                            </a>
+                            <a href="https://terminal-0-1.vercel.app/" target='_blank'>
+                                <motion.button
+                                    className=" mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1"
+                                    initial={{ scale: 1 }}
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: 'spring', stiffness: 300 }}
+                                >
+                                    <FaEnvelope />
+                                </motion.button>
+                            </a>
+                        </div>
             </motion.div>
         </div>
     );

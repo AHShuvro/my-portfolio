@@ -35,7 +35,7 @@ const Footer = () => {
 
 
     return (
-        <footer className='w-full bg-gray-900 text-white py-12'>
+        <footer className='w-full bg-secondary text-white py-12 sm:px-16 px-6 '>
             <div className=" flex flex-col lg:flex-row items-center justify-around gap-10 xl:gap-0 max-h-screen ">
                 <div className="w-full lg:w-1/2 hidden lg:flex">
                     <iframe
@@ -76,7 +76,7 @@ const Footer = () => {
                         </div>
                         <button
                             disabled={isSubmitting}
-                            className={`w-full py-3 bg-indigo-500 text-white rounded-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed`}
+                            className={`w-full py-3 bg-secondary-text text-white rounded-lg transition-transform transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed`}
                             type="submit"
                         >
                             {isSubmitting ? "Loading..." : "Login"}
@@ -94,20 +94,20 @@ const Footer = () => {
                     <h1 className='text-3xl font-semibold'>Let's Connect</h1>
                 </div>
 
-                <div className='mb-8 flex space-x-4'>
-                    <a href='https://www.linkedin.com/in/ahshuvro77777/' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                <div className='mb-8 flex gap-6'>
+                    <a href='https://www.linkedin.com/in/ahshuvro77777/' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaLinkedin size={24} />
                     </a>
-                    <a href='https://github.com/ahshuvro' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                    <a href='https://github.com/ahshuvro' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaGithub size={24} />
                     </a>
-                    <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                    <a href='https://facebook.com' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaFacebook size={24} />
                     </a>
-                    <a href='ahshuvro77777@gmail.com' className='hover:text-gray-400 transition-colors'>
+                    <a href='ahshuvro77777@gmail.com' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaEnvelope size={24} />
                     </a>
-                    <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank' rel='noopener noreferrer' className='hover:text-gray-400 transition-colors'>
+                    <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaFilePdf size={24} />
                     </a>
                 </div>

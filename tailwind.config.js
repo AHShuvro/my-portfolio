@@ -17,6 +17,17 @@ export default {
         'grow-shrink2': 'grow-shrink 4s ease-in-out infinite',
         'grow-shrink3': 'grow-shrink 7s ease-in-out infinite',
       },
+      colors: {
+        'primary': '#212428',
+        'secondary': '#1E2024',
+        'secondary-text': '#FF0A38',
+        'primary-text': '#C4CFDE',
+
+      },
+      boxShadow: {
+        'custom-1': '0 15px 10px -2px rgba(0, 0, 0, 0.2)',
+        'custom-2': '0 15px 10px -2px rgba(0, 0, 0, 0.1)',
+      }
     },
   },
   plugins: [],

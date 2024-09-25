@@ -24,12 +24,14 @@ const Feedback = () => {
                 Working with Shuvro was transformative for our project. His expertise in frontend technologies and innovative problem-solving were crucial to our success. He delivered a visually stunning and functional website, paying attention to every detail. His professionalism and dedication set a new standard for future projects. We're thrilled with the outcome and eager to collaborate again.
             </motion.p>
 
-            {/* Swiper Section */}
             <div className="mt-12">
                 <Swiper
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
+                        renderBullet: (index, className) => {
+                            return `<span class="${className}" style="background-color: #ff0a38; border-radius: 50%; width: 6px; height: 6px; display: inline-block; margin: 0 5px;"></span>`;
+                        },
                     }}
                     navigation={true}
                     autoplay={{
@@ -61,7 +63,7 @@ const Feedback = () => {
                 >
                     {feedbackData.map((item, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="w-full bg-[#1F2937] rounded-lg flex flex-col items-start justify-center px-4 sm:px-6 md:px-8 lg:px-14 py-8 md:py-12 lg:py-16">
+                            <div className="w-full bg-secondary rounded-lg flex flex-col items-start justify-center px-4 sm:px-6 md:px-8 lg:px-14 py-8 md:py-12 lg:py-16">
                                 <p className='text-white text-base sm:text-lg md:text-xl lg:text-2xl pb-6'>
                                     {item.feedback.length > 120
                                         ? `${item.feedback.slice(0, 120)} ...`
@@ -69,7 +71,7 @@ const Feedback = () => {
 
                                     {item.feedback.length > 120 && (
                                         <button
-                                            className="text-blue-500 font-bold"
+                                            className="text-secondary-text font-bold"
                                         >
                                             <a className='text-base font-bold' href="#" target="">Read more</a>
                                         </button>

@@ -20,7 +20,7 @@ const About = () => {
                 I am a web developer passionate about building user-friendly, high-performance applications. I specialize in frontend development with React, creating visually appealing, interactive websites. My goal is to constantly improve and bring fresh ideas to the web development space.
             </motion.p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-12">
                 {services.map((service, idx) => (
                     <div key={idx} className="xs:w-64 w-full">
                         <Tilt>
@@ -30,7 +30,7 @@ const About = () => {
                                 initial="hidden"
                                 animate="show"
                             >
-                                <div className="bg-gray-800 rounded-2xl p-6 min-h-[280px] flex flex-col items-center justify-center">
+                                <div className="bg-gradient-to-r from-secondary to-primary shadow-custom-1 rounded-2xl p-6 min-h-[280px] flex flex-col items-center justify-center">
                                     <img
                                         src={service.icon}
                                         alt={service.title}

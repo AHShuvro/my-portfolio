@@ -3,7 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
     return (
-        <div className="py-12 sm:px-16 px-6 relative w-full mx-auto flex flex-col items-center sm:flex-row overflow-hidden bg-gradient-to-r from-gray-800 via-gray-600 to-gray-400 text-white">
+        <div className="py-12 sm:px-16 px-6 relative w-full mx-auto flex flex-col items-center sm:flex-row overflow-hidden bg-gradient-to-r from-secondary to-primary text-white">
             <div className="absolute inset-0 w-full h-full flex items-center justify-center z-0">
                 <div className="bg-white opacity-10 w-[500px] h-[500px] rounded-full"></div>
             </div>
