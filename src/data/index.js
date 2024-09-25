@@ -1,10 +1,11 @@
 
 const navLink = [
-    { name: 'Home', path: 'home' },   
-    { name: 'About', path: 'about' },
+    { name: 'Home', path: 'home' },
     { name: 'Skills', path: 'skills' },
     { name: 'Experience', path: 'experience' },
     { name: 'Works', path: 'works' },
+    { name: 'Contact', path: 'contact' },
+
 ];
 
 const skills = [
@@ -71,7 +72,7 @@ const projects = [
             'path/to/image5.jpg',
             'path/to/image6.jpg',
         ],
-        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
+        techStack: ['Tailwind', 'JavaScript', 'ES6', 'React'],
 
 
     },
@@ -93,7 +94,7 @@ const projects = [
             'path/to/image5.jpg',
             'path/to/image6.jpg',
         ],
-        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
+        techStack: ['Tailwind', 'JavaScript', 'ES6', 'React'],
 
     },
     {        
@@ -114,7 +115,7 @@ const projects = [
             'path/to/image5.jpg',
             'path/to/image6.jpg',
         ],
-        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
+        techStack: ['Tailwind', 'JavaScript', 'ES6', 'React'],
 
     },
     {
@@ -135,7 +136,7 @@ const projects = [
             'path/to/image5.jpg',
             'path/to/image6.jpg',
         ],
-        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
+        techStack: ['Tailwind', 'JavaScript', 'ES6', 'React'],
 
     },
     {
@@ -156,7 +157,7 @@ const projects = [
             'path/to/image5.jpg',
             'path/to/image6.jpg',
         ],
-        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
+        techStack: ['Tailwind', 'JavaScript', 'ES6', 'React'],
 
     },
     {
@@ -177,7 +178,7 @@ const projects = [
             'path/to/image5.jpg',
             'path/to/image6.jpg',
         ],
-        techStack: ['Vue.js', 'Firebase', 'CSS Grid', 'Axios'],
+        techStack: ['Tailwind', 'JavaScript', 'ES6', 'React'],
 
     },
 ]
@@ -206,6 +207,12 @@ const feedbackData = [
 ];
 
 
+const sliderImages = [
+    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
+    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
+    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
+    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
+    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
+];
 
-
-export { navLink, services, projects, feedbackData, skills};
+export { navLink, services, projects, feedbackData, skills, sliderImages};

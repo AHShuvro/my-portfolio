@@ -131,7 +131,7 @@ const Works = () => {
                                                 <button
                                                     className="text-secondary-text font-bold"
                                                 >
-                                                    <Link to={`/projectDetail/${project.id}`} target="blank"><br />Read more</Link>
+                                                    <Link to={`/projectDetail/${project.id}`}><br />Read more</Link>
                                                 </button>
                                             )}
                                         </p>

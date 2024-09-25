@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Loading from "./components/Loading";
 import Skills from "./components/Skills";
 import ProjectDetail from "./components/ProjectDetail";
+import Navbar2 from "./components/Navbar2";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +21,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 300);
+    }, 500);
   }, []);
 
   if (isLoading) {
@@ -52,13 +53,20 @@ function App() {
                 <Element name="works" className="element">
                   <Works />
                 </Element>
-                  <Gallery />
+                <Gallery />
                 <Feedback />
-                <Footer />
+                <Element name="contact" className="element">
+                  <Footer />
+                </Element>
               </>
             }
           />
-          <Route path="/projectDetail/:id" element={<ProjectDetail />} />
+          <Route path="/projectDetail/:id" element={
+            <>
+              < Navbar2 />
+              <ProjectDetail />
+            </>
+          } />
         </Routes>
       </div>
     </Router>

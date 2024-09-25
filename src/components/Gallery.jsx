@@ -1,19 +1,12 @@
 import { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
-
 import { fadeIn, slideStyle, textVariant } from "./animations";
-import { div } from "framer-motion/client";
+import { sliderImages } from "../data";
 
 export const Gallery = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
-    const sliderImages = [
-        { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-        { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-        { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-        { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-        { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-    ];
+
 
 
     useEffect(() => {
