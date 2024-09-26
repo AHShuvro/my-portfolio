@@ -16,7 +16,7 @@ const Hero = () => {
                         <p className="mt-4 text-white text-lg sm:text-xl text-start">Frontend Developer | React Specialist</p>
 
                         <div className='flex gap-6 '>
-                            <a href='https://drive.google.com/file/d/1hC1je4pT5jttkwSVgpJsN59fOsgmovKl/view?usp=sharing' target='_blank'>
+                            <a href='https://drive.google.com/file/d/1PJWaVTdNQsphHijgLbDinO8RufWmmsqT/view?usp=sharing' target='_blank'>
                                 <motion.button
                                     className=" mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1"
                                     initial={{ scale: 1 }}

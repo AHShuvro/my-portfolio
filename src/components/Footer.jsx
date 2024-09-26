@@ -107,7 +107,7 @@ const Footer = () => {
                     <a href='https://ahshuvro77777@gmail.com' target='-blank' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaEnvelope size={24} />
                     </a>
-                    <a href='https://drive.google.com/file/d/166N6PNx2jTK1gtMcSGmAAC2fOyLr9ShR/view?usp=drive_link' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
+                    <a href='https://drive.google.com/file/d/1PJWaVTdNQsphHijgLbDinO8RufWmmsqT/view?usp=sharing' target='_blank' rel='noopener noreferrer' className=' mt-6 p-1 sm:p-6 bg-gradient-to-r to-secondary from-primary text-secondary-text text-2xl shadow-custom-1'>
                         <FaFilePdf size={24} />
                     </a>
                 </div>

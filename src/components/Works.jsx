@@ -92,21 +92,21 @@ const Works = () => {
 
                                                     <style>
                                                         {`
-                                                          @keyframes zoomInOut {
-                                                            0% {
-                                                              transform: scale(1);
+                                                            @keyframes zoomInOut {
+                                                                0% {
+                                                                    transform: scale(1);
+                                                                }
+                                                                50% {
+                                                                    transform: scale(1.5);
+                                                                }
+                                                                100% {
+                                                                    transform: scale(1);
+                                                                }
                                                             }
-                                                            50% {
-                                                              transform: scale(1.5);
-                                                            }
-                                                            100% {
-                                                              transform: scale(1);
-                                                            }
-                                                          }
                                                                                                         
-                                                          .animate-zoom {
-                                                            animation: zoomInOut 1s infinite;
-                                                          }
+                                                            .animate-zoom {
+                                                                animation: zoomInOut 1s infinite;
+                                                            }
                                                         `}
                                                     </style>
                                                     <a href={project.git} target="_blank">
