@@ -211,7 +211,7 @@ const projects = [
         projectName: 'Portfolio',
         client: 'Personal',
         budget: '$00.00',
-        git: 'https://github.com/AHShuvro/portfolio.git',
+        git: 'https://github.com/AHShuvro/my-portfolio',
         duration: '15 days',
         date: '1 Jan 2024',
         features: [
