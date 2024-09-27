@@ -43,11 +43,12 @@ const Works = () => {
                         disableOnInteraction: false,
                     }}
                     speed={1500}
-                    pagination={{ clickable: true,
+                    pagination={{
+                        clickable: true,
                         renderBullet: (index, className) => {
                             return `<span class="${className}" style="background-color: #ff0a38; border-radius: 50%; width: 6px; height: 6px; display: inline-block; margin: 0 5px;"></span>`;
                         },
-                     }}
+                    }}
                     modules={[Autoplay, Pagination]}
                     className="mySwiper"
                     breakpoints={{
@@ -81,13 +82,13 @@ const Works = () => {
                                             animate="show"
                                         >
                                             <div className=" relative w-full h-full flex items-center justify-center mb-4">
-                                                <a href={project.link} target="_blank">
+                                                <Link to={`/projectDetail/${project.id}`}>
                                                     <img
                                                         src={project.img}
                                                         alt={project.title}
                                                         className="w-full h-[190px] object-cover rounded-md"
                                                     />
-                                                </a>
+                                                </Link>
                                                 <div className="absolute w-7 h-7 right-4 top-5 bg-secondary-text rounded-full cursor-pointer flex items-center justify-center">
 
                                                     <style>
@@ -127,14 +128,24 @@ const Works = () => {
                                             {project.description.length > 220
                                                 ? `${project.description.slice(0, 220)} ...`
                                                 : project.description}
-                                            {project.description.length > 220 && (
-                                                <button
-                                                    className="text-secondary-text font-bold"
-                                                >
-                                                    <Link to={`/projectDetail/${project.id}`}>Read more</Link>
-                                                </button>
-                                            )}
+                                            <button
+                                                className="text-secondary-text font-bold"
+                                            >
+                                                <Link to={`/projectDetail/${project.id}`}>Read more</Link>
+                                            </button>
                                         </p>
+                                        <a href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <motion.button
+                                                className=" mt-6 p-1 sm:p-3 bg-gradient-to-r to-secondary from-primary text-secondary-text text-lg font-bold shadow-custom-1"
+                                                initial={{ scale: 1 }}
+                                                whileHover={{ scale: 1.05 }}
+                                                transition={{ type: 'spring', stiffness: 300 }}
+                                            >
+                                                View Project
+                                            </motion.button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

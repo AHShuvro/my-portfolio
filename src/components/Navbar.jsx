@@ -29,7 +29,7 @@ const Navbar = () => {
                         navLink.map((link, idx) => (
                             <li key={idx}>
                                 <ScrollLink to={link.path}
-                                    className={`${active === link.name ? "text-secondary-text" : "text-[#FFFFFF]"} text-lg font-medium cursor-pointer`}
+                                    className={`${active === link.name ? "text-secondary-text" : "text-[#FFFFFF]"} text-lg font-medium cursor-pointer hover:text-secondary-text`}
                                     smooth={true}
                                     offset={-90}
                                     duration={700}
@@ -56,7 +56,7 @@ const Navbar = () => {
                                 navLink.map((link, idx) => (
                                     <li key={idx}>
                                         <ScrollLink to={link.path}
-                                            className={`${active === link.name ? "text-secondary-text" : "text-[#FFFFFF]"} text-base font-medium cursor-pointer`}
+                                            className={`${active === link.name ? "text-secondary-text" : "text-[#FFFFFF]"} text-base font-medium cursor-pointer hover:text-secondary-text`}
                                             smooth={true}
                                             offset={-90}
                                             duration={700}
