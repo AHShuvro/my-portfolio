@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '../data';
 
@@ -6,12 +6,22 @@ const ProjectDetail = () => {
     const { id } = useParams();
     const project = projects.find((p) => p.id.toString() === id);
 
+    const messagesRef = useRef(null);
+
+    useEffect(() => {
+        if (messagesRef.current) {
+            messagesRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [project]);
+
+
     if (!project) {
-        return <div className="text-red-500 text-center mt-10">Project not found!</div>;
+        return <div className="bg-gray-700 text-red-500 text-center text-4xl font-bold flex items-center justify-center w-screen h-screen mt-10">Project not found!</div>;
     }
 
+
     return (
-        <div className="bg-gray-900 min-h-screen py-20">
+        <div ref={messagesRef} className="bg-gray-900 min-h-screen py-20">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="max-w-5xl mx-auto bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                     

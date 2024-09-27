@@ -12,7 +12,7 @@ const Navbar2 = () => {
     // const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-gray-900 shadow-custom-3'>
+        <nav className='sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-gray-700 shadow-custom-3'>
             <div className='w-full flex justify-between items-center mx-auto'>
                 <RouterLink to={'/'}
                     className='flex items-center gap-2'
