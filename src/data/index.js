@@ -149,7 +149,7 @@ const projects = [
         gallery: [
             'https://i.ibb.co/r7RrDq8/Screenshot-2024-09-19-183123.jpg',
         ],
-        techStack: ['Tailwind', 'JavaScript', 'React', 'Node.js'],
+        techStack: ['Tailwind', 'JavaScript', 'React'],
         additionalInfo: 'The platform is optimized for performance and allows developers to collaborate in real-time.',
     },
     {
@@ -174,7 +174,7 @@ const projects = [
         gallery: [
             'https://i.ibb.co/9GTG0VL/Brand-shop-1.jpg',
         ],
-        techStack: ['Tailwind', 'JavaScript', 'React', 'Node.js'],
+        techStack: ['Tailwind', 'JavaScript', 'React'],
         additionalInfo: 'This project was built with a focus on scalability and performance for high-traffic e-commerce sites.',
     },
     {
@@ -199,7 +199,7 @@ const projects = [
         gallery: [
             'https://i.ibb.co/MsgYxKn/dashboard-1.jpg',
         ],
-        techStack: ['Tailwind', 'JavaScript', 'React', 'D3.js'],
+        techStack: ['Tailwind', 'JavaScript', 'React', ''],
         additionalInfo: 'This admin dashboard can be integrated into various platforms for effective data management and decision-making.',
     },
     {
@@ -280,11 +280,13 @@ const feedbackData = [
 
 
 const sliderImages = [
-    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
-    { img: "https://i.ibb.co/GtfLD4G/clothing.jpg" },
+    { img: "https://picsum.photos/600/400?random=1" },
+    { img: "https://picsum.photos/600/400?random=2" },
+    { img: "https://picsum.photos/600/400?random=3" },
+    { img: "https://picsum.photos/600/400?random=4" },
+    { img: "https://picsum.photos/600/400?random=5" },
+    { img: "https://picsum.photos/600/400?random=6" },
+    { img: "https://picsum.photos/600/400?random=7" },
 ];
 
 export { navLink, services, projects, feedbackData, skills, sliderImages};

@@ -54,7 +54,7 @@ function App() {
                   <Works />
                 </Element>
                 <Gallery />
-                <Feedback />
+                {/* <Feedback /> */}
                 <Element name="contact" className="element">
                   <Footer />
                 </Element>
