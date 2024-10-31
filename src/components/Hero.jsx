@@ -13,7 +13,7 @@ const Hero = () => {
                 <AnimationCanvas />
                 <div className="w-full mt-12 lg:mt-0 lg:w-1/2 flex items-center justify-start lg:justify-center text-center">
                     <div>
-                        <p className="mt-4 text-white text-lg sm:text-xl text-start">Frontend Developer | React Specialist</p>
+                        <p className="mt-4 text-white text-lg sm:text-xl text-start">Frontend Developer | React</p>
 
                         <div className='flex gap-6 '>
                             <a href='https://drive.google.com/file/d/1PJWaVTdNQsphHijgLbDinO8RufWmmsqT/view?usp=sharing' target='_blank'>
